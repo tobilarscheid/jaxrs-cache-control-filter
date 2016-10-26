@@ -62,27 +62,27 @@ public class CacheControlFilter implements ContainerResponseFilter {
 				break;
 			case MUST_REVALIDATE:
 				logger.debug("Found MUST_REVALIDATE, setting to " + directive.value());
-				cc.setMustRevalidate(Boolean.getBoolean(directive.value()));
+				cc.setMustRevalidate(Boolean.parseBoolean(directive.value()));
 				break;
 			case NO_CACHE:
 				logger.debug("Found NO_CACHE, setting to " + directive.value());
-				cc.setNoCache(Boolean.getBoolean(directive.value()));
+				cc.setNoCache(Boolean.parseBoolean(directive.value()));
 				break;
 			case NO_STORE:
 				logger.debug("Found NO_STORE, setting to " + directive.value());
-				cc.setNoStore(Boolean.getBoolean(directive.value()));
+				cc.setNoStore(Boolean.parseBoolean(directive.value()));
 				break;
 			case NO_TRANSFORM:
 				logger.debug("Found NO_TRANSFORM, setting to " + directive.value());
-				cc.setNoTransform(Boolean.getBoolean(directive.value()));
+				cc.setNoTransform(Boolean.parseBoolean(directive.value()));
 				break;
 			case PRIVATE:
 				logger.debug("Found PRIVATE, setting to " + directive.value());
-				cc.setPrivate(Boolean.getBoolean(directive.value()));
+				cc.setPrivate(Boolean.parseBoolean(directive.value()));
 				break;
 			case PROXY_REVALIDATE:
 				logger.debug("Found PROXY_REVALIDATE, setting to " + directive.value());
-				cc.setProxyRevalidate(Boolean.getBoolean(directive.value()));
+				cc.setProxyRevalidate(Boolean.parseBoolean(directive.value()));
 				break;
 			case S_MAX_AGE:
 				logger.debug("Found S_MAX_AGE, setting to " + directive.value());
