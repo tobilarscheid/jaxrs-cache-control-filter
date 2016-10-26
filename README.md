@@ -4,7 +4,7 @@ JAX-RS cache control finally became easy! Add `Cache-Control` or `Expires` heade
 
 To get started, add the following dependency from jitpack:
 
-https://jitpack.io/#tobilarscheid/jaxrs-cache-control-filter/v-1.0.0
+https://jitpack.io/#tobilarscheid/jaxrs-cache-control-filter/v-1.0.1
 
 ## Cache-Control
 
